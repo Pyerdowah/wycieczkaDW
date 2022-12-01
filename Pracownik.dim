@@ -1,0 +1,242 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="282dff05-5b34-4bc5-bb32-fd87c8c3f850" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Pracownik</ID>
+  <Name>Pracownik</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1144" scrolltop="-8546" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6932" y="21511" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01ee0000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="pracownik" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4604" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000fc11000043110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_pracownik" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1144</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-8546</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="4b39560e-2318-465b-afc6-f8d80d7a28d0">
+    <DataSourceViewID>Wycieczka</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="a9df8f1c-4372-49cb-be1f-4341fe9505ad">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="83ff1b24-fe9a-4d9f-aef8-62bbd4871363">
+      <ID>I Drekordu</ID>
+      <Name>I Drekordu</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="030abf42-7638-448b-a6c3-369f9bb3ab2b">
+          <DataType>BigInt</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f6e8e420-3f30-4aa6-b049-5e64cdf05f37">
+            <TableID>dbo_pracownik</TableID>
+            <ColumnID>IDrekordu</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="a323ba40-4d85-45aa-a049-1600b1eab5ad">
+          <AttributeID>I Dpracownika</AttributeID>
+          <Name>I Dpracownika</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bbe0c524-6b83-4a34-a3e0-48108120c8c9">
+          <AttributeID>Dlugoscpracynastanowisku</AttributeID>
+          <Name>Dlugoscpracynastanowisku</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="78b100e9-d53f-4c43-ae02-f05a3bfc5618">
+          <AttributeID>Wiek</AttributeID>
+          <Name>Wiek</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9d721d93-bd3d-4b19-bb71-6a4618d82080">
+          <AttributeID>Pensja</AttributeID>
+          <Name>Pensja</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b6a4c3c7-44d0-4d09-98bb-c90e49aababb">
+          <AttributeID>Filia</AttributeID>
+          <Name>Filia</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="18bd56d1-1ac2-46d6-8de2-d7216bd18c1d">
+          <AttributeID>Imie I Nazwisko</AttributeID>
+          <Name>Imie I Nazwisko</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2b22cf0c-a014-4fb7-bdbf-98cf4fb2b62d">
+          <AttributeID>Aktualnoscrekordu</AttributeID>
+          <Name>Aktualnoscrekordu</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c2ca899e-9ef5-497e-87a9-0810835fccc1">
+      <ID>I Dpracownika</ID>
+      <Name>I Dpracownika</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3561c087-26a0-4aa2-88e6-36d6d0888eed">
+          <DataType>BigInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="419bab2d-22fc-4398-888e-fbfa2db59fc8">
+            <TableID>dbo_pracownik</TableID>
+            <ColumnID>IDpracownika</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a2e93ae0-ca1c-4231-804e-4e5627d8b231">
+      <ID>Dlugoscpracynastanowisku</ID>
+      <Name>Dlugoscpracynastanowisku</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3aef2471-2b35-4623-8cec-55562bfe094e">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9ef8921f-6a82-4928-8e2d-57828e8f96c9">
+            <TableID>dbo_pracownik</TableID>
+            <ColumnID>dlugoscpracynastanowisku</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8478e1e9-f92e-4421-a2f1-d6f71e4855be">
+      <ID>Wiek</ID>
+      <Name>Wiek</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="23b98ebb-1e4a-4aa6-8ee1-45f809b7864a">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7b4a440f-5a5a-4d90-9540-78b66aaa3f68">
+            <TableID>dbo_pracownik</TableID>
+            <ColumnID>wiek</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="98759f06-1554-48ff-a94c-0b4b97c4a0f9">
+      <ID>Pensja</ID>
+      <Name>Pensja</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3bd87c41-3666-4e5c-b1bd-fffd0a9c9a7c">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c4525f20-dbfc-49e3-ae3c-39e1f834650f">
+            <TableID>dbo_pracownik</TableID>
+            <ColumnID>pensja</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b35393e9-e95d-486a-85f3-11fb1ad3be8e">
+      <ID>Filia</ID>
+      <Name>Filia</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9cf222a9-9843-434b-ab4c-aa6402a8d2b9">
+          <DataType>WChar</DataType>
+          <DataSize>7</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0d469784-6dc6-4088-8fe4-a4ca7ead842c">
+            <TableID>dbo_pracownik</TableID>
+            <ColumnID>filia</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="87a5dca8-6d18-47be-8a51-7eadb07761d2">
+      <ID>Imie I Nazwisko</ID>
+      <Name>Imie I Nazwisko</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="aa7aa47f-e642-4bae-a21c-c82a53b34aa6">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f8122c57-309f-44be-a232-76df0a54f45c">
+            <TableID>dbo_pracownik</TableID>
+            <ColumnID>imieINazwisko</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="34431c8e-00f5-490c-b923-d171d9171db1">
+      <ID>Aktualnoscrekordu</ID>
+      <Name>Aktualnoscrekordu</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bfb9f220-0c8c-410a-8e38-7e4d232d28cc">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="440c0bc1-12f2-4587-87d7-fd1206028987">
+            <TableID>dbo_pracownik</TableID>
+            <ColumnID>aktualnoscrekordu</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

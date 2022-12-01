@@ -1,0 +1,307 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b3a98d9e-f5dd-4ffd-af56-f03a7c0a4908" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Wycieczka</ID>
+  <Name>Wycieczka</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Wycieczka</DataSourceID>
+  <Schema>
+    <xs:schema id="Wycieczka" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Wycieczka" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="3ffae4b0-7d80-4705-8e8b-f8a780eb0644">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_hotel" msprop:design-time-name="d4b2a1bc-33f5-4552-80e1-cb7219e89425" msprop:DbTableName="hotel" msprop:FriendlyName="hotel" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IDhotelu" msprop:design-time-name="92c973bc-217d-4458-8b7d-c0354dca2c0a" msprop:DbColumnName="IDhotelu" msprop:FriendlyName="IDhotelu" type="xs:long" />
+                  <xs:element name="liczbaGwiazdek" msprop:design-time-name="168ebeb5-b0b9-4038-8971-15e138274785" msprop:DbColumnName="liczbaGwiazdek" msprop:FriendlyName="liczbaGwiazdek" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="nazwa" msprop:design-time-name="6f6b6955-d86b-4d54-9ad6-54492deff0ff" msprop:DbColumnName="nazwa" msprop:FriendlyName="nazwa" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="nazwaUlicy" msprop:design-time-name="86ff93b7-b448-4ad6-b29c-d0d56e5746cf" msprop:DbColumnName="nazwaUlicy" msprop:FriendlyName="nazwaUlicy" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="numerLokalu" msprop:design-time-name="f1d0c3c6-3696-40b1-93f3-d12cc61a053a" msprop:DbColumnName="numerLokalu" msprop:FriendlyName="numerLokalu" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="miejscowosc" msprop:design-time-name="9861c111-cf68-4645-82e8-899efeda87ab" msprop:DbColumnName="miejscowosc" msprop:FriendlyName="miejscowosc" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="kraj" msprop:design-time-name="641bd4c1-2813-4ae1-9ede-a0111b1abd09" msprop:DbColumnName="kraj" msprop:FriendlyName="kraj" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_oferta" msprop:design-time-name="ae25dd32-0006-46d0-9e1c-57384a956e92" msprop:DbTableName="oferta" msprop:FriendlyName="oferta" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IDoferty" msprop:design-time-name="4923e8d3-2d3a-4baa-93a4-5f10c28ee910" msprop:DbColumnName="IDoferty" msprop:FriendlyName="IDoferty" type="xs:long" />
+                  <xs:element name="sezon" msprop:design-time-name="bf3170ac-04c4-4553-aa27-bd090bb574cd" msprop:DbColumnName="sezon" msprop:FriendlyName="sezon" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="6" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_pobyt" msprop:design-time-name="5cba004f-c233-4e45-a160-b1f7fb6cc634" msprop:DbTableName="pobyt" msprop:FriendlyName="pobyt" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IDpobytu" msprop:design-time-name="72b680d0-22d9-48a3-97f7-c6430f941547" msprop:DbColumnName="IDpobytu" msprop:FriendlyName="IDpobytu" type="xs:long" />
+                  <xs:element name="dlugoscPobytu" msprop:design-time-name="97db9c31-3ea3-40b1-b333-1df97d9d05d7" msprop:DbColumnName="dlugoscPobytu" msprop:FriendlyName="dlugoscPobytu" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_pracownik" msprop:design-time-name="5e9191dc-4fac-4477-8b74-b4ffea1111c5" msprop:DbTableName="pracownik" msprop:FriendlyName="pracownik" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IDrekordu" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="8594d72e-29fa-48ad-a8af-4737558b0ed6" msprop:DbColumnName="IDrekordu" msprop:FriendlyName="IDrekordu" type="xs:long" />
+                  <xs:element name="IDpracownika" msprop:design-time-name="4963e919-9167-49c1-8ac0-4ac9e4685497" msprop:DbColumnName="IDpracownika" msprop:FriendlyName="IDpracownika" type="xs:long" minOccurs="0" />
+                  <xs:element name="dlugoscpracynastanowisku" msprop:design-time-name="23f7ddac-0b00-485b-9f13-0fd3f86f00e4" msprop:DbColumnName="dlugoscpracynastanowisku" msprop:FriendlyName="dlugoscpracynastanowisku" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="wiek" msprop:design-time-name="17fdb774-e1bf-4a1a-9416-91634cd99ac6" msprop:DbColumnName="wiek" msprop:FriendlyName="wiek" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="pensja" msprop:design-time-name="e0fa9f9d-f9af-4fdf-8f11-323685630d2b" msprop:DbColumnName="pensja" msprop:FriendlyName="pensja" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="filia" msprop:design-time-name="c1823e76-208e-4259-bcaa-1e07616aebcf" msprop:DbColumnName="filia" msprop:FriendlyName="filia" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="7" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="imieINazwisko" msprop:design-time-name="12008a3a-cc8d-4bd8-81b7-79e420627e01" msprop:DbColumnName="imieINazwisko" msprop:FriendlyName="imieINazwisko" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="aktualnoscrekordu" msprop:design-time-name="1f1d1fa3-45cb-4135-b840-882ff323463e" msprop:DbColumnName="aktualnoscrekordu" msprop:FriendlyName="aktualnoscrekordu" type="xs:boolean" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_tabelaData" msprop:design-time-name="d3ae009c-f29b-46d2-9085-c2c98e8d0bbd" msprop:DbTableName="tabelaData" msprop:FriendlyName="tabelaData" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IDdaty" msprop:design-time-name="767c89c8-0814-424a-b313-8f6497097993" msprop:DbColumnName="IDdaty" msprop:FriendlyName="IDdaty" type="xs:long" />
+                  <xs:element name="dataa" msprop:design-time-name="732be089-1aee-4a10-97c1-6d68b6932456" msprop:DbColumnName="dataa" msprop:FriendlyName="dataa" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="rok" msprop:design-time-name="fbeb04e9-ed3f-4e92-ac4e-bf876b3f2157" msprop:DbColumnName="rok" msprop:FriendlyName="rok" type="xs:int" minOccurs="0" />
+                  <xs:element name="miesiac" msprop:design-time-name="1a75e6d6-8248-4665-9823-f20268ba2c5b" msprop:DbColumnName="miesiac" msprop:FriendlyName="miesiac" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="11" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="dzien" msprop:design-time-name="a3cbcc11-aed5-4954-a695-2df90c38ae14" msprop:DbColumnName="dzien" msprop:FriendlyName="dzien" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_transport" msprop:design-time-name="433c8545-f233-48dd-9df1-ac986ccfab54" msprop:DbTableName="transport" msprop:FriendlyName="transport" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IDtransportu" msprop:design-time-name="d98edd88-f806-4dc1-96b9-50bd36ab383a" msprop:DbColumnName="IDtransportu" msprop:FriendlyName="IDtransportu" type="xs:long" />
+                  <xs:element name="srodekLokomocji" msprop:design-time-name="3d930ff4-27cf-4b70-9343-70e08cf0470a" msprop:DbColumnName="srodekLokomocji" msprop:FriendlyName="srodekLokomocji" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="7" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="miejsceWyjazdu" msprop:design-time-name="830d4c84-f6a9-4a14-bef4-1fe52b092a85" msprop:DbColumnName="miejsceWyjazdu" msprop:FriendlyName="miejsceWyjazdu" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="nazwaFirmy" msprop:design-time-name="31bdb56e-9405-4e4c-b3a0-e7ecade974e0" msprop:DbColumnName="nazwaFirmy" msprop:FriendlyName="nazwaFirmy" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_ubezpieczenie" msprop:design-time-name="40663ad7-6c80-4778-abf0-7c35ccf18d8e" msprop:DbTableName="ubezpieczenie" msprop:FriendlyName="ubezpieczenie" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IDubezpieczenia" msprop:design-time-name="1b06d1b3-3f34-42ee-9fe2-0264eed2fc51" msprop:DbColumnName="IDubezpieczenia" msprop:FriendlyName="IDubezpieczenia" type="xs:long" />
+                  <xs:element name="rodzajUbezpieczenia" msprop:design-time-name="d0d6e8ab-e9f2-47d6-ba25-fc1c626aa27b" msprop:DbColumnName="rodzajUbezpieczenia" msprop:FriendlyName="rodzajUbezpieczenia" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="12" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_zorganizowanieWycieczki" msprop:design-time-name="d11eb3fe-07a4-4a9d-b9a9-990334cf4f2d" msprop:DbTableName="zorganizowanieWycieczki" msprop:FriendlyName="zorganizowanieWycieczki" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IDoferty" msprop:design-time-name="4ee2b968-7ae4-4796-aaa0-afe9332260b5" msprop:DbColumnName="IDoferty" msprop:FriendlyName="IDoferty" type="xs:long" minOccurs="0" />
+                  <xs:element name="IDpracownika" msprop:design-time-name="bb25a4d6-5ddb-4297-807e-401d93829ad3" msprop:DbColumnName="IDpracownika" msprop:FriendlyName="IDpracownika" type="xs:long" minOccurs="0" />
+                  <xs:element name="IDdatyRozpoczeciaWycieczki" msprop:design-time-name="824bae52-0c85-44a6-a1d9-5d97d6a16066" msprop:DbColumnName="IDdatyRozpoczeciaWycieczki" msprop:FriendlyName="IDdatyRozpoczeciaWycieczki" type="xs:long" minOccurs="0" />
+                  <xs:element name="IDtransportu" msprop:design-time-name="c8ea44e6-200e-409e-af40-75e730b66bae" msprop:DbColumnName="IDtransportu" msprop:FriendlyName="IDtransportu" type="xs:long" minOccurs="0" />
+                  <xs:element name="IDubezpieczenia" msprop:design-time-name="716e516b-6349-45e7-942b-3aab0db8726d" msprop:DbColumnName="IDubezpieczenia" msprop:FriendlyName="IDubezpieczenia" type="xs:long" minOccurs="0" />
+                  <xs:element name="IDhotelu" msprop:design-time-name="c51f82be-645c-4cf3-ae2f-fb0d1a17f97e" msprop:DbColumnName="IDhotelu" msprop:FriendlyName="IDhotelu" type="xs:long" minOccurs="0" />
+                  <xs:element name="IDpobytu" msprop:design-time-name="078443cd-e67c-4505-861d-33ee9c534df3" msprop:DbColumnName="IDpobytu" msprop:FriendlyName="IDpobytu" type="xs:long" minOccurs="0" />
+                  <xs:element name="IDdatyZawarciaUmowyZFirmaTransportowa" msprop:design-time-name="090b73fb-52f1-43e9-b703-db87ed365eb9" msprop:DbColumnName="IDdatyZawarciaUmowyZFirmaTransportowa" msprop:FriendlyName="IDdatyZawarciaUmowyZFirmaTransportowa" type="xs:long" minOccurs="0" />
+                  <xs:element name="liczbaMiejscWykupionychPrzezKlientow" msprop:design-time-name="428dcccb-1bf9-4a13-85fa-b0b448156020" msprop:DbColumnName="liczbaMiejscWykupionychPrzezKlientow" msprop:FriendlyName="liczbaMiejscWykupionychPrzezKlientow" type="xs:int" minOccurs="0" />
+                  <xs:element name="dochodZKupnaWycieczek" msprop:design-time-name="7bdebeb2-2c79-467f-b5dd-001ff7a00e01" msprop:DbColumnName="dochodZKupnaWycieczek" msprop:FriendlyName="dochodZKupnaWycieczek" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="zysk" msprop:design-time-name="95eff114-ebcc-46f6-9473-63aa4ce5906b" msprop:DbColumnName="zysk" msprop:FriendlyName="zysk" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="liczbaWszystkichDostepnychMiejscWTejOfercie" msprop:design-time-name="7f43d512-4861-4df1-be15-98b908659a2d" msprop:DbColumnName="liczbaWszystkichDostepnychMiejscWTejOfercie" msprop:FriendlyName="liczbaWszystkichDostepnychMiejscWTejOfercie" type="xs:int" minOccurs="0" />
+                  <xs:element name="kosztZorganizowaniaWycieczki" msprop:design-time-name="43bc2ae8-79db-4148-bc77-0d453e6a6594" msprop:DbColumnName="kosztZorganizowaniaWycieczki" msprop:FriendlyName="kosztZorganizowaniaWycieczki" type="xs:decimal" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_hotel" />
+          <xs:field xpath="IDhotelu" />
+        </xs:unique>
+        <xs:unique name="dbo_oferta_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_oferta" />
+          <xs:field xpath="IDoferty" />
+        </xs:unique>
+        <xs:unique name="dbo_pobyt_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_pobyt" />
+          <xs:field xpath="IDpobytu" />
+        </xs:unique>
+        <xs:unique name="dbo_pracownik_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_pracownik" />
+          <xs:field xpath="IDrekordu" />
+        </xs:unique>
+        <xs:unique name="dbo_tabelaData_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_tabelaData" />
+          <xs:field xpath="IDdaty" />
+        </xs:unique>
+        <xs:unique name="dbo_transport_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_transport" />
+          <xs:field xpath="IDtransportu" />
+        </xs:unique>
+        <xs:unique name="dbo_ubezpieczenie_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_ubezpieczenie" />
+          <xs:field xpath="IDubezpieczenia" />
+        </xs:unique>
+        <xs:keyref name="FK__zorganizo__IDpra__5AEE82B9" refer="dbo_pracownik_Constraint1">
+          <xs:selector xpath=".//dbo_zorganizowanieWycieczki" />
+          <xs:field xpath="IDpracownika" />
+        </xs:keyref>
+        <xs:keyref name="FK__zorganizo__IDtra__5CD6CB2B" refer="dbo_transport_Constraint1">
+          <xs:selector xpath=".//dbo_zorganizowanieWycieczki" />
+          <xs:field xpath="IDtransportu" />
+        </xs:keyref>
+        <xs:keyref name="FK__zorganizo__IDdat__60A75C0F" refer="dbo_tabelaData_Constraint1">
+          <xs:selector xpath=".//dbo_zorganizowanieWycieczki" />
+          <xs:field xpath="IDdatyZawarciaUmowyZFirmaTransportowa" />
+        </xs:keyref>
+        <xs:keyref name="FK__zorganizo__IDube__5DCAEF64" refer="dbo_ubezpieczenie_Constraint1">
+          <xs:selector xpath=".//dbo_zorganizowanieWycieczki" />
+          <xs:field xpath="IDubezpieczenia" />
+        </xs:keyref>
+        <xs:keyref name="FK__zorganizo__IDpob__5FB337D6" refer="dbo_pobyt_Constraint1">
+          <xs:selector xpath=".//dbo_zorganizowanieWycieczki" />
+          <xs:field xpath="IDpobytu" />
+        </xs:keyref>
+        <xs:keyref name="FK__zorganizo__IDofe__59FA5E80" refer="dbo_oferta_Constraint1">
+          <xs:selector xpath=".//dbo_zorganizowanieWycieczki" />
+          <xs:field xpath="IDoferty" />
+        </xs:keyref>
+        <xs:keyref name="FK__zorganizo__IDhot__5EBF139D" refer="Constraint1">
+          <xs:selector xpath=".//dbo_zorganizowanieWycieczki" />
+          <xs:field xpath="IDhotelu" />
+        </xs:keyref>
+        <xs:keyref name="FK__zorganizo__IDdat__5BE2A6F2" refer="dbo_tabelaData_Constraint1">
+          <xs:selector xpath=".//dbo_zorganizowanieWycieczki" />
+          <xs:field xpath="IDdatyRozpoczeciaWycieczki" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Wycieczka xmlns="" />
+  </Schema>
+</DataSourceView>
